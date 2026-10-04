@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Laith Haitham Azzam — Portfolio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800;900&family=Bricolage+Grotesque:opsz,wght@12..96,600..800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body class="lang-en" data-theme="dark">
+<div class="bg-grid" aria-hidden="true"></div>
+<div class="cursor-glow" id="cursorGlow" aria-hidden="true"></div>
+<div class="bg-blobs" aria-hidden="true">
+  <span class="blob b1"></span>
+  <span class="blob b2"></span>
+  <span class="blob b3"></span>
+  <span class="blob b4"></span>
+</div>
+
+<header class="site-nav">
+  <div class="nav-row">
+    <div class="brand">Laith <span>Azzam</span></div>
+    <nav class="links">
+      <a href="#about"><span data-en-only>About</span><span data-ar-only>نبذة</span></a>
+      <a href="#experience"><span data-en-only>Experience</span><span data-ar-only>الخبرات</span></a>
+      <a href="#projects"><span data-en-only>Projects</span><span data-ar-only>المشاريع</span></a>
+      <a href="#skills"><span data-en-only>Skills</span><span data-ar-only>المهارات</span></a>
+      <a href="#education"><span data-en-only>Education</span><span data-ar-only>التعليم</span></a>
+      <a href="#certificates"><span data-en-only>Certificates</span><span data-ar-only>الشهادات</span></a>
+      <a href="#contact"><span data-en-only>Contact</span><span data-ar-only>تواصل</span></a>
+    </nav>
+    <div class="nav-controls">
+      <button class="ctrl-btn" id="langBtn" type="button">EN / عربي</button>
+      <button class="ctrl-btn" id="themeBtn" type="button">
+        <span data-en-only>Dark/Light</span><span data-ar-only>داكن/فاتح
+        </span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="container">
+    <div class="status"><span class="pulse"></span><span data-en-only>Open to work · Dubai, UAE</span><span data-ar-only>متاح للعمل · دبي، الإمارات</span></div>
+    <h1 class="name">
+      <span class="n1"><span data-en-only>Laith</span><span data-ar-only>ليث</span></span>
+      <span class="n2"><span data-en-only>Haitham Azzam</span><span data-ar-only>هيثم عزام</span></span>
+    </h1>
+    <div class="role-line">
+      <span class="role-pre"><span data-en-only>I'm a</span><span data-ar-only>أنا</span></span>
+      <span class="role-swap" id="roleSwap">
+        <span class="rw is-active"><span data-en-only>Flutter Developer</span><span data-ar-only>مطوّر Flutter</span></span>
+        <span class="rw"><span data-en-only>UI/UX Designer</span><span data-ar-only>مصمم UI/UX</span></span>
+        <span class="rw"><span data-en-only>IT Support Specialist</span><span data-ar-only>أخصائي دعم تقني</span></span>
+        <span class="rw"><span data-en-only>Content Creator</span><span data-ar-only>صانع محتوى</span></span>
+      </span>
+    </div>
+    <p class="lede" data-en-only>Mobile and web apps that are fast, scalable and pixel-perfect — from high-fidelity Figma designs to production-ready Flutter code.</p>
+    <p class="lede" data-ar-only>تطبيقات جوال وويب سريعة وقابلة للتوسّع ومتقنة التفاصيل — من تصاميم Figma عالية الدقة إلى كود Flutter جاهز للإنتاج.</p>
+
+    <div class="bento">
+      <div class="tile t-photo"><img src="photo.png" alt="Laith Haitham Azzam"><span class="t-tag"><span data-en-only>Hi, I'm Laith</span><span data-ar-only>أهلاً، أنا ليث</span></span></div>
+      <div class="tile t-scene" id="sceneTile">
+<!-- floating scene card: every 3s  code -> camera -> laptop & tech -> designer tools -->
+      <div class="code-card scene-card" aria-hidden="true">
+        <div class="code-head">
+          <div class="code-dots"><span></span><span></span><span></span></div>
+          <span class="scene-label" id="sceneLabel">main.dart</span>
+        </div>
+        <div class="scene-stage" id="sceneStage">
+
+          <!-- 1. code -->
+          <div class="scene is-active" data-label="main.dart">
+            <pre class="code-lines" id="codeTyper"></pre>
+          </div>
+
+          <!-- 2. camera -->
+          <div class="scene" data-label="camera.raw">
+            <svg viewBox="0 0 160 84" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              <g class="cam-corners" stroke-width="1.6">
+                <path d="M12 16 V8 H20"/><path d="M148 16 V8 H140"/>
+                <path d="M12 68 V76 H20"/><path d="M148 68 V76 H140"/>
+              </g>
+              <path d="M62 24 L67 16 H93 L98 24"/>
+              <rect x="103" y="18" width="9" height="5" rx="2" class="cam-shutter"/>
+              <rect x="40" y="24" width="80" height="46" rx="10"/>
+              <rect x="48" y="31" width="9" height="5" rx="1.8" class="cam-flash-body"/>
+              <circle cx="52.5" cy="33.5" r="9" class="cam-flash" stroke="none"/>
+              <circle cx="80" cy="47" r="17"/>
+              <circle cx="80" cy="47" r="13.5" stroke-dasharray="3 3.4" stroke-opacity=".6" class="cam-ring"/>
+              <circle cx="80" cy="47" r="8.5" class="cam-lens"/>
+              <circle cx="76.2" cy="43.4" r="2" fill="currentColor" stroke="none" class="cam-glint"/>
+              <circle cx="110" cy="33" r="2.2" fill="#f2685c" stroke="none" class="cam-rec"/>
+            </svg>
+          </div>
+
+          <!-- 3. laptop & tech work -->
+          <div class="scene" data-label="workspace">
+            <svg viewBox="0 0 160 84" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              <g class="tw-wifi" stroke-width="1.6">
+                <path d="M16.5 26.5 A5 5 0 0 1 23.5 26.5" class="w1"/>
+                <path d="M12.9 22.9 A10 10 0 0 1 27.1 22.9" class="w2"/>
+                <path d="M9.4 19.4 A15 15 0 0 1 30.6 19.4" class="w3"/>
+                <circle cx="20" cy="31" r="1.5" fill="currentColor" stroke="none"/>
+              </g>
+              <rect x="38" y="8" width="84" height="53" rx="5"/>
+              <path d="M28 61 H132 L138 69 H22 Z"/>
+              <line x1="70" y1="65" x2="90" y2="65" stroke-opacity=".6"/>
+              <polyline points="48 26 43 31 48 36" class="tw-br"/>
+              <polyline points="62 26 67 31 62 36" class="tw-br"/>
+              <line x1="52" y1="44" x2="72" y2="44" class="tw-line l1"/>
+              <line x1="52" y1="51" x2="64" y2="51" class="tw-line l2"/>
+              <rect x="84" y="40" width="6" height="12" rx="1.5" class="tw-bar b1"/>
+              <rect x="94" y="30" width="6" height="22" rx="1.5" class="tw-bar b2"/>
+              <rect x="104" y="35" width="6" height="17" rx="1.5" class="tw-bar b3"/>
+              <circle cx="141" cy="26" r="6" class="tw-gear-core"/>
+              <circle cx="141" cy="26" r="9.5" stroke-width="4" stroke-dasharray="3.2 3.2" stroke-opacity=".75" class="tw-gear"/>
+            </svg>
+          </div>
+
+          <!-- 4. designer tools -->
+          <div class="scene" data-label="design.fig">
+            <svg viewBox="0 0 160 84" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              <g class="ds-handles" stroke-width="1.1" stroke-opacity=".55">
+                <line x1="20" y1="58" x2="40" y2="10"/>
+                <line x1="76" y1="10" x2="108" y2="70"/>
+                <line x1="142" y1="22" x2="124" y2="68"/>
+              </g>
+              <g class="ds-hdots" fill="currentColor" stroke="none">
+                <circle cx="40" cy="10" r="2.2"/><circle cx="76" cy="10" r="2.2"/>
+                <circle cx="108" cy="70" r="2.2"/><circle cx="124" cy="68" r="2.2"/>
+              </g>
+              <path class="ds-path" pathLength="1" stroke-width="2.4" d="M20 58 C40 10 76 10 92 40 S124 68 142 22"/>
+              <g class="ds-anchors" stroke-width="1.6" fill="var(--card-bg)">
+                <rect x="16.5" y="54.5" width="7" height="7" rx="1.5"/>
+                <rect x="88.5" y="36.5" width="7" height="7" rx="1.5"/>
+                <rect x="138.5" y="18.5" width="7" height="7" rx="1.5"/>
+              </g>
+              <g class="ds-swatches" stroke="none">
+                <circle cx="52" cy="73" r="5" fill="#f2685c"/>
+                <circle cx="67" cy="73" r="5" fill="#f4bf4f"/>
+                <circle cx="82" cy="73" r="5" fill="#59c96f"/>
+                <circle cx="97" cy="73" r="5" fill="currentColor"/>
+              </g>
+            </svg>
+          </div>
+
+        </div>
+        <div class="scene-pips"><i class="on"></i><i></i><i></i><i></i></div>
+      </div>
+      </div>
+      <div class="tile t-clock"><span class="t-k"><span data-en-only>Dubai now</span><span data-ar-only>الوقت في دبي</span></span><b id="dxbClock">--:--</b><span class="t-sub" id="dxbDate"></span></div>
+      <div class="tile t-cta">
+        <a href="#contact" class="btn btn-solid"><span data-en-only>Get in Touch</span><span data-ar-only>تواصل معي</span></a>
+        <div class="cv-menu" id="cvMenu">
+          <button type="button" class="btn btn-outline" id="cvToggle" aria-expanded="false" aria-haspopup="true">
+            <span data-en-only>Download CV</span><span data-ar-only>تحميل السيرة الذاتية</span>
+            <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+          </button>
+          <div class="cv-pop" role="menu">
+            <a role="menuitem" href="cv/Laith_Haitham_Azzam_Flutter_Developer.pdf" download><span data-en-only>Flutter Developer</span><span data-ar-only>مطوّر Flutter</span></a>
+            <a role="menuitem" href="cv/Laith_Haitham_Azzam_UIUX_Designer.pdf" download><span data-en-only>UI/UX Designer</span><span data-ar-only>مصمم UI/UX</span></a>
+            <a role="menuitem" href="cv/Laith_Haitham_Azzam_IT_Support.pdf" download><span data-en-only>IT &amp; Technical Support</span><span data-ar-only>الدعم التقني</span></a>
+            <a role="menuitem" href="cv/Laith_Haitham_Azzam_Content_Creator.pdf" download><span data-en-only>Content Creator</span><span data-ar-only>صانع محتوى ومصمم بصري</span></a>
+          </div>
+        </div>
+      </div>
+      <a class="tile t-proj" href="#projects"><b id="projCount">0</b><span><span data-en-only>projects shipped</span><span data-ar-only>مشروع منجز</span></span><i class="arrow">↘</i></a>
+    </div>
+  </div>
+</section>
+
+<div class="marquee" aria-hidden="true"><div class="mq-track" id="mqTrack"></div></div>
+
+<section id="about" class="split">
+  <div class="container">
+    <div class="sec-head reveal">
+      <h2><span data-en-only>About</span><span data-ar-only>نبذة عني</span></h2>
+    </div>
+    <p class="about-body reveal" data-en-only>
+      Architecting high-performance, scalable, and pixel-perfect mobile and web applications. Expert in managing the full
+      application lifecycle — seamlessly transitioning from high-fidelity Figma designs to production-ready code. Deeply
+      proficient in enterprise state management patterns (<strong>BLoC/Cubit, GetX, Provider</strong>) with an unwavering
+      commitment to <strong>Clean Architecture</strong>, SOLID principles, and strict separation of concerns. Adept at
+      optimizing app performance, automating CI/CD pipelines, and delivering exceptional, responsive user experiences
+      that drive business growth. Backed by hands-on IT support and hardware experience, and a creative side in content
+      creation and visual design for UAE-based brands.
+    </p>
+    <p class="about-body reveal" data-ar-only>
+      معماري تطبيقات جوال وويب عالية الأداء، قابلة للتوسّع، ومتقنة التفاصيل. خبير في إدارة دورة حياة التطبيق الكاملة،
+      من تصاميم Figma عالية الدقة إلى كود جاهز للإنتاج. متمكّن من أنماط إدارة الحالة الاحترافية
+      (<strong>BLoC/Cubit، GetX، Provider</strong>) مع التزام راسخ بمبدأ <strong>Clean Architecture</strong> ومبادئ
+      SOLID والفصل الصارم بين الطبقات. متمرّس في تحسين أداء التطبيقات، أتمتة خطوط CI/CD، وتقديم تجارب مستخدم متجاوبة
+      استثنائية تدفع نمو الأعمال. وإلى جانب ذلك خبرة عملية في الدعم التقني وصيانة العتاد، وجانب إبداعي في صناعة المحتوى
+      والتصميم البصري لعلامات تجارية في الإمارات.
+    </p>
+    <div class="stats reveal" id="stats"></div>
+  </div>
+</section>
+
+<section id="experience" class="split">
+  <div class="container">
+    <div class="sec-head reveal">
+      <h2><span data-en-only>Professional Experience</span><span data-ar-only>الخبرة المهنية</span></h2>
+    </div>
+    <div class="timeline" id="experienceList"></div>
+  </div>
+</section>
+
+<section id="projects">
+  <div class="container">
+    <div class="sec-head reveal">
+      <h2><span data-en-only>Projects</span><span data-ar-only>المشاريع</span></h2>
+    </div>
+    <div class="proj-filters reveal" id="projectFilters" role="group" aria-label="Project filters"></div>
+    <div class="proj-grid" id="projectsList"></div>
+  </div>
+</section>
+
+<section id="skills">
+  <div class="container">
+    <div class="sec-head reveal">
+      <h2><span data-en-only>Skills</span><span data-ar-only>المهارات</span></h2>
+    </div>
+    <div class="skills-grid" id="skillsList"></div>
+  </div>
+</section>
+
+<section id="education" class="split">
+  <div class="container">
+    <div class="sec-head reveal">
+      <h2><span data-en-only>Education &amp; Languages</span><span data-ar-only>التعليم واللغات</span></h2>
+    </div>
+    <div class="two-col">
+      <div class="info-card reveal" id="educationList"></div>
+      <div class="info-card reveal" id="languagesList"></div>
+    </div>
+  </div>
+</section>
+
+<section id="certificates">
+  <div class="container">
+    <div class="sec-head reveal">
+      <h2><span data-en-only>Certificates &amp; Courses</span><span data-ar-only>الشهادات والدورات</span></h2>
+    </div>
+    <div class="cert-grid" id="certificatesList"></div>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="container contact-wrap">
+    <h2 class="reveal"><span data-en-only>Let's Work Together</span><span data-ar-only>لنعمل معًا</span></h2>
+    <p class="sec-sub reveal" data-en-only>Based in Dubai, UAE — open to Flutter development, UI/UX design, IT support, and content creation opportunities.</p>
+    <p class="sec-sub reveal" data-ar-only>مقيم في دبي، الإمارات — متاح لفرص العمل في تطوير Flutter وتصميم UI/UX والدعم التقني وصناعة المحتوى.</p>
+    <div class="contact-grid reveal">
+      <a class="contact-pill" href="mailto:laithhazzam@gmail.com"><span class="ic">✉</span> laithhazzam@gmail.com</a>
+      <a class="contact-pill" href="tel:+971508817400"><span class="ic">☎</span> +971 50 881 7400</a>
+      <a class="contact-pill" href="https://wa.me/971508817400" target="_blank" rel="noopener"><span class="ic">✆</span> WhatsApp</a>
+      <a class="contact-pill" href="https://github.com/LaithHaithamAzzam" target="_blank" rel="noopener"><span class="ic">⌘</span> GitHub</a>
+      <span class="contact-pill"><span class="ic">◎</span> <span data-en-only>UAE — Dubai</span><span data-ar-only>الإمارات — دبي</span></span>
+    </div>
+    <div class="cv-row reveal">
+      <p class="cv-label"><span data-en-only>Download my CV</span><span data-ar-only>تحميل السيرة الذاتية</span></p>
+      <div class="contact-grid">
+        <a class="contact-pill" href="cv/Laith_Haitham_Azzam_Flutter_Developer.pdf" download><span class="ic">⤓</span> <span data-en-only>Flutter Developer</span><span data-ar-only>مطوّر Flutter</span></a>
+        <a class="contact-pill" href="cv/Laith_Haitham_Azzam_UIUX_Designer.pdf" download><span class="ic">⤓</span> <span data-en-only>UI/UX Designer</span><span data-ar-only>مصمم UI/UX</span></a>
+        <a class="contact-pill" href="cv/Laith_Haitham_Azzam_IT_Support.pdf" download><span class="ic">⤓</span> <span data-en-only>IT &amp; Technical Support</span><span data-ar-only>الدعم التقني</span></a>
+        <a class="contact-pill" href="cv/Laith_Haitham_Azzam_Content_Creator.pdf" download><span class="ic">⤓</span> <span data-en-only>Content Creator &amp; Visual Designer</span><span data-ar-only>صانع محتوى ومصمم بصري</span></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <span data-en-only>© 2026 Laith Haitham Azzam. All rights reserved.</span>
+  <span data-ar-only>© 2026 ليث هيثم عزام. جميع الحقوق محفوظة.</span>
+</footer>
+
+<button id="backToTop" type="button" aria-label="Back to top" title="Back to top">
+  <svg class="ring" viewBox="0 0 56 56" aria-hidden="true"><circle class="ring-bg" cx="28" cy="28" r="24"/><circle class="ring-fg" id="ringFg" cx="28" cy="28" r="24"/></svg>
+  <span class="pct" id="pct">0</span>
+  <svg class="up" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="18 15 12 9 6 15"/></svg>
+</button>
+
+<script src="script.js"></script>
+</body>
+</html>
